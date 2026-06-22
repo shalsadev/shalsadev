@@ -1,60 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Profile</title>
-    <style>
-        .box {
-            border: 2px solid black;
-            padding: 20px;
-            margin: 30px;
-        }
-        body {
-            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            background-color:#cec29d;
-        }
-        h1, h2 {
-            color:brown
-        }
-        img {
-            display: block;
-            border-radius: 50%;
-        }
-        hr{
-            border: 1px solid black;
-        }
-    </style>
+    <title>something for you</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="box">
-    <center>
-        <h1>Shalsa's Page</h1>
-        <p>This website was created as a basic HTML exercise. Here I created the basic structure of a web page.</p>
-    </center>
-    
-    <hr>
 
-    <h2>About Me🧕</h2>
-    <img src="prooofile.png" width="160" alt="my photo">
-    <p>I am a 10th grade student who is currently learning the basics of web development.
-        I am interested in understanding how websites are structured using HTML.
-        I like trying new things about coding. In my opinion, coding is both fun and frustrating, 
-        but that is what makes it exciting, because the more we think, the more skilled we become.</p>
+    <div id="snow-container"></div>
 
-    <h2>My Skills🔥</h2>
-    <ul>
-        <li>HTML (Basic)</li>
-        <li>C++ (Basic)</li>
-        <li>Python (Basic)</li>
-        <li>Microsoft Office (Word, Excel, and others)</li>
-        <li>Canva</li>
-    </ul>
+    <div class="container">
+        <div class="card">
 
-    <h2>Social Media💻</h2>
-    <p><a href="https://www.instagram.com/llovessaa?igsh=MTd5cXFrdWVwdHExcg==">My Instagram</a></p>
-    <p><a href="https://www.linkedin.com/in/shalsabilla-aini-6bb7b7384?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">My LinkedIn</a></p>
+            <h1>hello.</h1>
 
-</div>
+            <p>
+                enter your secret code
+            </p>
+
+            <input
+                type="text"
+                id="code"
+                placeholder="your code..."
+            >
+
+            <button onclick="login()">
+                open
+            </button>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
