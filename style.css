@@ -1,0 +1,223 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI,sans-serif;
+}
+
+body{
+    background:#8d8d8d;
+    min-height:100vh;
+    overflow:hidden;
+}
+
+.container{
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+.card{
+
+    width:100%;
+    max-width:550px;
+
+    padding:40px;
+
+    border-radius:30px;
+
+    background:
+    rgba(255,255,255,.35);
+
+    backdrop-filter:blur(12px);
+
+    text-align:center;
+
+    box-shadow:
+    0 10px 40px rgba(0,0,0,.08);
+
+}
+
+.card h1{
+    margin-bottom:10px;
+}
+
+.card p{
+    opacity:0.8;
+    margin-bottom:20px;
+}
+
+input{
+    width:100%;
+    padding:14px;
+
+    border:none;
+    outline:none;
+
+    border-radius:12px;
+
+    margin-bottom:15px;
+}
+
+button{
+    width:100%;
+    padding:14px;
+
+    border:none;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+button:hover{
+    transform:translateY(-2px);
+}
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+#snow-container{
+    position:fixed;
+    width:100%;
+    height:100%;
+    pointer-events:none;
+}
+
+.snow{
+    position:absolute;
+
+    top:-10px;
+
+    background:white;
+
+    border-radius:50%;
+
+    animation:fall linear forwards;
+}
+
+@keyframes fall{
+    to{
+        transform:translateY(110vh);
+    }
+}
+
+.emerald{
+    background:
+    linear-gradient(
+        135deg,
+        #c9b39a,
+        #d8c6b2,
+        #e7dbcd
+    );
+
+    color:#4a3b30;
+}
+
+.ruby{
+    background:
+    linear-gradient(
+        135deg,
+        #a24141,
+        #a63838,
+        #fd8787
+    );
+
+    color:white;
+}
+
+.mahogany{
+    background:
+    linear-gradient(
+        135deg,
+        #1e8964,
+        #208a5e,
+        #4bffae
+    );
+
+    color:white;
+}
+
+.characters{
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+
+    z-index: 1000;
+}
+
+.left-char{
+    position: fixed;
+
+    bottom: 20px;
+    left: 20px;
+
+    height: 130px;
+
+    animation: float 3s ease-in-out infinite;
+
+    z-index: 1000;
+}
+
+.right-char{
+    position: fixed;
+
+    bottom: 20px;
+    right: 20px;
+
+    height: 130px;
+
+    animation: float 3s ease-in-out infinite;
+
+    animation-delay: 1.5s;
+
+    z-index: 1000;
+}
+
+@keyframes float{
+    0%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(-10px);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes fallLeaf{
+
+    from{
+        transform:
+        translateY(-50px)
+        rotate(0deg);
+    }
+
+    to{
+        transform:
+        translateY(110vh)
+        rotate(360deg);
+    }
+
+}
